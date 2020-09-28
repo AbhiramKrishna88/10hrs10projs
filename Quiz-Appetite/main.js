@@ -70,7 +70,7 @@ function quizzing() {
 	}
 }
 
-fetch("https://raw.githubusercontent.com/AbhiramKrishna88/10hrs10projects_Quiz_Apetite/master/questions.json")
+fetch("https://raw.githubusercontent.com/AbhiramKrishna88/10hrs10projs/master/Quiz-Appetite/questions.json")
 .then(res => res.json())
 .then(jsonData => {
 	data = jsonData;
