@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Countdown timer</title>
+    <meta name="description" content="This is an example of a meta description.">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+	<h1>Timer</h1>
+
+	<div class="timer">
+		<div class="time"> 
+			<input type="number" id="day" min="0" value="0"> <div class="timel" >Day</div></input>
+		</div>
+		<div class="time"> 
+			<input type="number" id="hrs" min="0" max="24" value="0"> <div class="timel" >Hour</div></input>
+		</div>
+		<div class="time"> 
+			<input type="number" id="min" min="0" max="60" value="0"> <div class="timel" >Minute</div></input>
+		</div>
+		<div class="time"> 
+			<input type="number" id="sec" min="0" max="60" value="0"> <div class="timel" >Second</div></input>
+		</div>		
+	</div>
+
+		<div class="btn-control">
+			<button class="btn" id="start">Start</button>
+			<button class="btn" id="pause">Pause</button>
+			<button class="btn" id="reset">Reset</button>
+		</div>
+   <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
