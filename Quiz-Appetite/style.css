@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+html,body{margin: 0;padding: 0;box-sizing: border-box;}
+body{display: flex; flex-direction:column; align-items: center; width: 100%; height: 100%;  font-family: 'Orbitron', sans-serif; background-color: #D8D8D8; color: #FFF;}
+
+h1{text-align: center; display: flex;  margin-top: 50px; text-shadow: 0px 0px 18px #996fd6;}
+
+.startscreen{display: flex; flex-direction: column; align-self: center; align-items: center; margin-top:150px; }
+.startscreen > input{border-radius: 7px; height: 20px; width: 250px;}
+#start{width: 150px; border-radius: 5px; height: 30px; background: linear-gradient(45deg, #A46DFF, #F6D1FD); color: #FFF; border: 3px solid #673AB7;}
+#start:active{border-bottom: none;}
+
+.quizzing{display: none;     
+	min-width: 50vw;
+	width: max-content;
+    max-width: 80vw;
+    height: fit-content;
+    max-height: 80vh;}
+.quizzing > .q{height:40px; width: 150px; background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );}
+#next{width: 150px; border-radius: 5px; height: 30px; display:none; background: linear-gradient(45deg, #A46DFF, #F6D1FD); color: #FFF; border: 3px solid #673AB7;}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  box-shadow: -4px 11px 8px 0 rgb(0 0 0 / 52%);
+  transition: 0.3s;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.anscontainer {
+  padding: 2px 90px;
+}
+
+.question{
+    font-size: 5vh;
+    margin: 0 0 30px 0px;
+}
+.qstlabel{
+	display: inline-block;
+}
+.qstmain{
+ 	display: inline-block;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
